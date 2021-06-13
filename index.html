@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Game Jam Entry</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 800px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/GoatGameWeb.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/GoatGameWeb.data.br",
+        frameworkUrl: "Build/GoatGameWeb.framework.js.br",
+        codeUrl: "Build/GoatGameWeb.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Game Jam Entry",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
